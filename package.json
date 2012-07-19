@@ -17,7 +17,7 @@
     "forum"
   ],
   "author": "Jean-Sébastien Tremblay <jeansebtr@xpensia.com> (http://xpensia.com/)",
-  "license": "BSD",
+  "license": "GPLv2",
   "engines": {
     "node": ">= 0.6.x"
   }
