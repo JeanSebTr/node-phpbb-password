@@ -4,11 +4,20 @@ node-phpbb-password
 phpbb's password hashing algorithm for Nodejs
 
 ## Installation
+
+### In a project
 ``` sh
-npm install phpbb-password
+npm install --save phpbb-password
+```
+
+### For command line use
+``` sh
+npm install -g phpbb-password
 ```
 
 ## Usage
+
+### In your code
 ``` javascript
 
 var phpbb = require('phpbb-password');
@@ -20,6 +29,13 @@ console.log(hash); // examples : $H$9sPKRpbzFtCY8ZGFvmPQU7qAaZlQ1E. $H$9940UI0zs
 // verify 
 var ok = phpbb.check_hash('bonjour, mot de passe', hash);
 console.log(ok); // true
+```
+
+### In the shell
+``` sh
+export HASH=$(phpbb-password hash "mypassword")
+
+echo $(phpbb-password verify "mypassword" "$HASH")
 ```
 
 ## TODO
