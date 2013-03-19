@@ -1,6 +1,6 @@
 {
   "name": "phpbb-password",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "phpbb's password hashing algorithm for Nodejs",
   "main": "phpbb.js",
   "bin": "cli.js",
